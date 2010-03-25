@@ -1,0 +1,10 @@
+<html>
+<script>
+    chrome.browserAction.onClicked.addListener(function(tab) {
+	  chrome.tabs.sendRequest(tab.id, {}, function(response) {
+	  	console.log(response);
+	  });
+	});
+
+</script>
+</html>

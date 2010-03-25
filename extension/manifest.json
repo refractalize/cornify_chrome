@@ -1,0 +1,23 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Cornify!!",
+  "version": "10001",
+  "icons": {
+    "48": "cornify_48.png",
+    "128": "cornify_128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "cornify.ico"
+  },
+
+  "background_page": "background.html",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+       "js": ["cornify.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
