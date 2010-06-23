@@ -1,0 +1,2 @@
+rm extension.zip
+zip extension.zip extension/* -x '*.swp'
